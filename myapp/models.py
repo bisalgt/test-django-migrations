@@ -9,6 +9,6 @@ class MyModel(models.Model):
         constraints = [
             models.CheckConstraint(
                 check=models.Q(age__gte=1),
-                name="Age should not be. less.than one."
+                name="Age should not be less than one"
             )
         ]
